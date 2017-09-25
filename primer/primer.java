@@ -36,6 +36,8 @@ public class Primer {
             }
         }
 		Runtime.getRuntime().exec("cp *.txt bench/testData");
+		Runtime.getRuntime().exec("make -C bench");
+		Runtime.getRuntime().exec("java bench/Main");
     }
     
 }
